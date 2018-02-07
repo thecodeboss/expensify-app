@@ -6,3 +6,35 @@ exports[`should render ExpenseDashboardPage correctly 1`] = `
   <Connect(ExpenseList) />
 </div>
 `;
+
+exports[`should render ExpenseDashboardPage correctly with 1 expense 1`] = `
+<div>
+  <Connect(ExpenseListFilters) />
+  <p>
+    Viewing 
+    1
+     
+    expense 
+    totalling 
+    $1.95
+    .
+  </p>
+  <Connect(ExpenseList) />
+</div>
+`;
+
+exports[`should render ExpenseDashboardPage correctly with more than 1 expense 1`] = `
+<div>
+  <Connect(ExpenseListFilters) />
+  <p>
+    Viewing 
+    3
+     
+    expenses 
+    totalling 
+    $1,141.95
+    .
+  </p>
+  <Connect(ExpenseList) />
+</div>
+`;
