@@ -11,7 +11,8 @@ export default class ExpenseForm extends React.Component {
       amount: props.expense ? (props.expense.amount / 100).toString() : '',
       createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
       calendarFocused: false,
-      error: ''
+      error: '',
+      isEdit: !!props.expense
     };
   }
   onDescriptionChange = (e) => {
@@ -83,7 +84,7 @@ export default class ExpenseForm extends React.Component {
             onChange={this.onNoteChange}
           >
           </textarea>
-          <button>Add Expense</button>
+          <button>{this.state.isEdit ? "Edit" : "Add"} Expense</button>
         </form>
       </div>
     );
