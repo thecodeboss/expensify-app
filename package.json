@@ -1,6 +1,9 @@
 {
   "name": "expensify-app",
-  "repository": "https://github.com/thecodeboss/expensify-app",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thecodeboss/expensify-app.git"
+  },
   "description": "Expensify Clone built by following a React guide on Udemy",
   "version": "1.0.0",
   "main": "index.js",
