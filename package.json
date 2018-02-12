@@ -1,5 +1,7 @@
 {
-  "name": "boilerplate-app",
+  "name": "expensify-app",
+  "repository": "https://github.com/thecodeboss/expensify-app",
+  "description": "Expensify Clone built by following a React guide on Udemy",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Michael Oliver",
